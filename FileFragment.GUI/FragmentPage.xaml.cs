@@ -15,9 +15,9 @@ namespace FileFragment.GUI
 	/// <summary>
 	/// An empty window that can be used on its own or navigated to within a Frame.
 	/// </summary>
-	public sealed partial class MainWindow : Window
+	public sealed partial class FragmentPage : Window
 	{
-		public MainWindow()
+		public FragmentPage()
 		{
 			InitializeComponent();
 			Content.AddHandler(UIElement.KeyDownEvent, new KeyEventHandler(LoseFocusEnterPressed), true);
