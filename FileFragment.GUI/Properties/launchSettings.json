@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "FileFragment.GUI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "FileFragment.GUI (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
