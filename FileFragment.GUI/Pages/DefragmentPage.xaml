@@ -8,7 +8,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid>
-        <TextBlock Text="hello" />
-    </Grid>
+    <StackPanel Padding="20" Spacing="10">
+        <TextBlock x:Name="SelectInputFolderTextBlock" Text="Select Input Folder" />
+        <Button Content="Browse..." Click="OnSelectInputFolderClicked"/>
+
+        <TextBlock x:Name="SelectOutputFileTextBlock" Text="Select File to Save As" />
+        <Button Content="Save as..." Click="OnSelectOutputFileClicked"/>
+
+        <Button Content="Defragment" Click="OnDefragmentClicked" />
+        <TextBlock x:Name="StatusTextBlock" Foreground="Gray"/>
+    </StackPanel>
 </Page>
