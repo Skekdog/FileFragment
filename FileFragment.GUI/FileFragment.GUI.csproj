@@ -30,9 +30,10 @@
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
 
-  <!-- <ItemGroup>
-    <Compile Include="obj\x64\Debug\net9.0-windows10.0.19041.0\win-x64\*.g.i.cs" />
-  </ItemGroup> -->
+  <ItemGroup>
+    <Compile Include="obj\x64\Debug\net9.0-windows10.0.19041.0\*.g.i.cs" />
+    <Compile Include="obj\x64\Debug\net9.0-windows10.0.19041.0\Pages\*.g.i.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <Manifest Include="$(ApplicationManifest)" />

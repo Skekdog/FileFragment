@@ -8,7 +8,17 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid>
-        
-    </Grid>
+    <StackPanel Padding="20" Spacing="10">
+        <TextBlock x:Name ="SelectFileTextBlock" Text="Select File to Fragment" />
+        <Button Content="Browse..." Click="OnSelectInputFileClicked"/>
+
+        <TextBlock x:Name="SelectOutputDirectoryTextBlock" Text="Select Output Directory" />
+        <Button Content="Browse..." Click="OnSelectOutputDirectoryClicked"/>
+
+        <TextBlock Text="Packet Size (bytes)" />
+        <TextBox x:Name="PacketSizeTextBox"/>
+
+        <Button Content="Fragment File" Click="OnFragmentClicked" />
+        <TextBlock x:Name="StatusTextBlock" Foreground="Gray"/>
+    </StackPanel>
 </Page>
