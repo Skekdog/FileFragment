@@ -11,13 +11,12 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
+    <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
     <TargetFramework>net9.0-windows10.0.19041.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <UseWinUI>true</UseWinUI>
-    <SelfContained>true</SelfContained>
-    <RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <EnableMsixTooling>true</EnableMsixTooling>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
   </PropertyGroup>
 
   <!-- For working with VS Code -->
