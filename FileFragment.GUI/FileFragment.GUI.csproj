@@ -17,6 +17,7 @@
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <ApplicationIcon>FileFragment.ico</ApplicationIcon>
   </PropertyGroup>
 
   <!-- For working with VS Code -->
