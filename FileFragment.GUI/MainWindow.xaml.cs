@@ -1,5 +1,7 @@
 using FileFragment.GUI.Pages;
+using Microsoft.UI;
 using Microsoft.UI.Xaml;
+using Windows.Graphics;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -15,6 +17,10 @@ namespace FileFragment.GUI
         {
             InitializeComponent();
             ContentFrame.Navigate(typeof(FragmentPage));
+
+            AppWindow.Resize(new SizeInt32(600, 400));
+            AppWindow.Title = "File Fragment";
+            AppWindow.SetIcon("FileFragment.ico");
         }
 
         private void OnFragmentTabClicked(object sender, RoutedEventArgs e)
