@@ -37,7 +37,7 @@ namespace FileFragment.GUI.Pages
                 _ = uint.TryParse(PacketSizeTextBox.Text, out uint packetSize);
                 if (packetSize == 0) throw new Exception("Invalid packet size");
 
-                DiskOp.Fragment(packetSize, selectedInputFile, selectedOutputDirectory);
+                DiskOp.Fragment(packetSize, selectedOutputDirectory, selectedInputFile);
 
                 StatusTextBlock.Text = "Fragmentation complete!";
             }
