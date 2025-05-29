@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "FileFragment.Console": {
-      "commandName": "Project",
-      "commandLineArgs": "defragment --input C:/testo --output C:/test2.txt"
-    }
-  }
-}
